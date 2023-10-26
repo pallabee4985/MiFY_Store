@@ -1,0 +1,22 @@
+.Nav{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    padding: 10px;
+    align-items: center;
+}
+.NavLogo{
+    height: 8vh;
+    /* margin-right: auto; */
+    padding: 2px;
+}
+.NavItem{
+    color:rgb(11, 11, 11);
+}
+.blackText{
+    color:black;
+}
+.Logo{
+    font-size: xx-large;
+}

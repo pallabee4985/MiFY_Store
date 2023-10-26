@@ -1,0 +1,10 @@
+.flex{
+    display: flex;
+    height:100px;
+    width: 200px;
+    justify-content:space-around;
+    align-items: center;
+}
+
+
+

@@ -1,0 +1,8 @@
+.color_active{
+    opacity:1 !important;
+    border: 1px,solid black;
+}
+.color_deactive{
+    border: 1px,solid black;
+    opacity:"0.5";
+}

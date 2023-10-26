@@ -1,0 +1,29 @@
+.form{
+    background-color:transparent;
+    height:max-content;
+    width: fit-content;
+    border: 3px solid black;
+    border-radius: 25px;
+    background-image: url("https://cdn.pixabay.com/photo/2017/08/01/22/19/white-2568288_1280.jpg");
+    background-size:cover;
+    padding: 50px;
+    margin: auto ;
+    margin-top:5px ;
+
+}
+label{
+    padding: 1px;
+    margin:auto;
+    display: block;
+    color: rgb(10, 62, 22);
+    font-size:20px;
+    font-weight: bold;
+}
+div{
+    margin:4px;
+}
+.Bold{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    color: rgb(56, 4, 4);
+}
