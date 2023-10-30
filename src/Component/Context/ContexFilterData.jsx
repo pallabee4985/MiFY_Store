@@ -15,12 +15,14 @@ function ContexFilterData({children}) {
               text:"",
               catagory:"All",
               company:"All",
-              color:"All"
+              color:"All",
+              price:0,
+              minPrice:0,
+              maxPrice:0
             }
           }
     
     let [state,dispatch]=useReducer(reducer,initialState)
-
     function gridview(){
       return dispatch({type:"GRID_VIEW"})
     }
@@ -35,6 +37,10 @@ function ContexFilterData({children}) {
       let {name,value}=e.target
       dispatch({type:"SET_FILTER_VALUE",payload:(name,value)})
     }
+    function clearAllData()
+    {
+      dispatch({type:"CLEAR_ALL_FILTER"})
+    }
     
     //use-effect for sorting AND filter in product page
     useEffect(()=>{
@@ -42,7 +48,7 @@ function ContexFilterData({children}) {
       dispatch({type:"SORTING_DATA"})
       //FILTER
       dispatch({type:"FILTER_PRODUCT"})
-    },[state.sorting,state.filter])
+    },[state.sorting,state.filter,product])
 
 
     useEffect(()=>{
@@ -50,7 +56,7 @@ function ContexFilterData({children}) {
     },[product])
     
   return (
-    <filteredProductProvider.Provider value={{...state,gridview,listview,sortingHandler,setFilterValue }}>
+    <filteredProductProvider.Provider value={{...state,clearAllData,gridview,listview,sortingHandler,setFilterValue }}>
       {children}
     </filteredProductProvider.Provider>
   )
