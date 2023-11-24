@@ -13,7 +13,7 @@ function ProductListing() {
           <SortingAndView/>
       </div>
       <div className="row">
-         {filterData.map((ele,i)=>{
+         {allData.map((ele,i)=>{
             return <ProductCard data={ele} key={i}/> 
           })}     
       </div> 

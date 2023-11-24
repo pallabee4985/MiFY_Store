@@ -22,6 +22,7 @@ function ContextData({children}) {
   //   api with images(landscapes)....https://api.escuelajs.co/api/v1/products  
   //  api with images().....
   let url="https://api.pujakaitem.com/api/products"
+  // let url="https://fakestoreapi.com/products/1"
   async function fetchData()
   {
   

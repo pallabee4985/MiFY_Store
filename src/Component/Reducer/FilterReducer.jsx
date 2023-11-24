@@ -5,7 +5,7 @@ function FilterReducer(state,action) {
       let value=action.payload.map((data)=>{
         return data.price
       })
-      let initialPrice=math.max(...value)
+      let initialPrice=Math.max(...value)
       return{
         ...state,
         filterData:[...action.payload],
@@ -54,7 +54,7 @@ function FilterReducer(state,action) {
         tempProduct=tempProduct.filter((data)=>{
           if(data.catagory===state.filter.catagory){
             return data
-          }elseif(state.filter.catagory==="ALL")
+          }else if(state.filter.catagory==="ALL")
           {return data;}
         })
       }
@@ -62,7 +62,7 @@ function FilterReducer(state,action) {
         tempProduct=tempProduct.filter((data)=>{
           if(data.company===state.filter.company){
             return data
-          }elseif(state.filter.company==="ALL")
+          }else if(state.filter.company==="ALL")
           {return data;}
         })
       }
@@ -70,7 +70,7 @@ function FilterReducer(state,action) {
         tempProduct=tempProduct.filter((data)=>{
           if(data.colors===state.filter.color){
             return data
-          }elseif(state.filter.color==="ALL")
+          }else if(state.filter.color==="ALL")
           {return data;}
         })
       }

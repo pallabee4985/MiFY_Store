@@ -1,0 +1,26 @@
+/* Style for the star rating container */
+.starRating {
+    font-size: 24px; /* Adjust the size of the stars */
+  }
+  
+  /* Style for individual stars */
+  .starRating span {
+    display: inline-block;
+    color: gold; /* Color for the stars */
+  }
+  
+  /* Style for the half-filled star */
+  .starRating .halfStar {
+    position: relative;
+    display: inline-block;
+    color: gold; /* Color for the stars */
+  }
+  
+  /* Positioning the half-filled star */
+  .starRating .halfStar:before {
+    content: '\00bd'; /* Unicode for a half-filled star */
+    position: absolute;
+    left: -0.5em;
+    top: 0;
+  }
+  
